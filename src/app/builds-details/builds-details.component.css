@@ -1,0 +1,51 @@
+
+.info-rectangle {
+  width: 100%;
+  max-width: 1200px;
+  height: 320px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  text-align: left;
+  font-size: 25px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  color: white;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.update-btn {
+  background-color: #fbc02d; /* Yellow */
+}
+
+.pdf-btn {
+  background-color: #1e88e5; /* Blue */
+}
+
+.update-btn:hover {
+  background-color: #dfa614;
+}
+
+.pdf-btn:hover {
+  background-color: #1165ae;
+}

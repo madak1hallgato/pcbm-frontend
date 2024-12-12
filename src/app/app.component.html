@@ -1,0 +1,14 @@
+<!--@if(!loginService.isAuthenticated){-->
+<!--  <app-login></app-login>-->
+<!--}-->
+<!--@if(loginService.isAuthenticated){-->
+  <nav>
+    <a class="nav-menu-link" routerLinkActive="active-route" routerLink="/builds/{{userId}}">Home</a>
+    <a class="nav-menu-link" routerLinkActive="active-route" routerLink="/build-add/users/{{userId}}/builds/0">Build</a>
+<!--    @if(loginService.isUserInRole(Role.ADMIN)){-->
+      <a *ngIf="userId === 1" class="nav-menu-link" routerLinkActive="active-route" routerLink="/components">Components</a>
+<!--    }-->
+    <a class="nav-menu-link" routerLinkActive="active-route" routerLink="/users/{{userId}}">Profile</a>
+  </nav>
+  <router-outlet></router-outlet>
+<!--}-->

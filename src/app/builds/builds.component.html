@@ -1,0 +1,23 @@
+<div class="builds-page">
+
+  <div *ngIf="user" class="profile-box">
+    <div class="profile-left">
+      <div class="profile-circle">{{user.username[0]}}</div>
+      <div class="greeting">Hi, {{ user.username }}!</div>
+    </div>
+    <div *ngIf="builds" class="builds-count">Builds: {{ builds.length }}</div>
+  </div>
+
+  <div class="builds-container">
+    <div *ngIf="builds" class="builds-box">
+      <div *ngIf="user" class="plus-build-item"  routerLink="/build-add/users/{{user.userId}}/builds/0">
+        <span> + </span>
+      </div>
+      <div *ngFor="let build of builds" class="build-item" routerLink="/builds-details/{{user?.userId}}/builds/{{build.buildId}}">
+        <span>{{build.name}}</span>
+        <button class="delete-btn" (click)="onDeleteBuild($event, build.buildId)">X</button>
+      </div>
+    </div>
+  </div>
+
+</div>

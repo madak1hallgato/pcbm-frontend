@@ -1,0 +1,25 @@
+<div class="add-component-page">
+  <h2 *ngIf="part">{{ part.name | uppercase }}</h2>
+
+  <form *ngIf="part" (ngSubmit)="updatePart()">
+
+    <div class="input-group">
+      <label for="name" class="input-label">Name</label>
+      <input type="text" [(ngModel)]="part.name" name="name" id="name" placeholder="Name" class="input-field"/>
+    </div>
+
+    <div class="input-group">
+      <label for="category" class="input-label">Category</label>
+      <select [(ngModel)]="part.categoryName" name="category" id="category" class="input-field">
+        <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="price" class="input-label">Price</label>
+      <input type="text" [(ngModel)]="part.price" name="price" id="price" placeholder="Price" class="input-field"/>
+    </div>
+
+    <button type="submit" class="submit-button">Update Component</button>
+  </form>
+</div>

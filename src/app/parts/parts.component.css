@@ -1,0 +1,90 @@
+
+body {
+  background-color: #acacac;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.category-selector {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+
+.part-list-container {
+  height: 312px;
+  overflow-y: auto;
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #676767;
+}
+
+
+.part-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bfbfbf;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.part-name {
+  font-size: 16px;
+}
+
+.part-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.edit-btn {
+  background-color: #ffeb3b;
+}
+
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.edit-btn:hover {
+  background-color: #fbc02d;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+.add-btn {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color:  #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}

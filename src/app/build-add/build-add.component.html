@@ -1,0 +1,35 @@
+<div *ngIf="build" class="build-add-page">
+
+  <div class="form-container">
+
+    <div class="input-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" [(ngModel)]="build.name" placeholder="Name">
+    </div>
+
+    <div class="input-group">
+      <label for="cpu">CPU</label>
+      <select id="cpu" [(ngModel)]="selectedCpu">
+        <option *ngFor="let cpu of CPUs" [value]="cpu.name">{{ cpu.name }}</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="gpu">GPU</label>
+      <select id="gpu" [(ngModel)]="selectedGpu">
+        <option *ngFor="let gpu of GPUs" [value]="gpu.name">{{ gpu.name }}</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="ram">RAM</label>
+      <select id="ram" [(ngModel)]="selectedRam">
+        <option *ngFor="let ram of RAMs" [value]="ram.name">{{ ram.name }}</option>
+      </select>
+    </div>
+
+  </div>
+
+  <button class="add-build-btn" (click)="updateBuild()">Add Build</button>
+
+</div>

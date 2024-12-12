@@ -1,0 +1,45 @@
+
+.build-add-page {
+  width: 100%;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 20px 20px 20px;
+  margin-bottom: 20px;
+  height: 360px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  margin: 10px;
+  color: #333;
+}
+
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.add-build-btn {
+  color: white;
+  background-color: #28a745;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-build-btn:hover {
+  background-color: #218838;
+}

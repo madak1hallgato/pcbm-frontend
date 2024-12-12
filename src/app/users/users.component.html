@@ -1,0 +1,15 @@
+
+<div *ngIf="user" class="container">
+  <div class="profile-box">
+    <div class="profile-details">
+      <div class="profile-circle">
+        <span>{{user.username[0]}}</span>
+      </div>
+      <div class="profile-info">
+        <div class="username">{{ user.username }}</div>
+        <div class="role">{{ user.role == "ADMIN" ? "Admin" : "Not Admin" }}</div>
+      </div>
+    </div>
+  </div>
+  <button class="logout-btn" (click)="loginService.logout()">Logout</button>
+</div>

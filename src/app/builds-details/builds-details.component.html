@@ -1,0 +1,9 @@
+<div class="info-rectangle">
+  <div class="info-text">
+    <p><span *ngIf="cpu" class="bold">CPU:</span> {{ cpu }}</p>
+    <p><span *ngIf="gpu" class="bold">GPU:</span> {{ gpu }}</p>
+    <p><span *ngIf="ram" class="bold">RAM:</span> {{ ram }}</p>
+  </div>
+</div>
+<button class="btn update-btn" routerLink="/build-add/users/{{user?.userId}}/builds/{{buildId}}">Update</button>
+<button class="btn pdf-btn">Import as PDF</button>

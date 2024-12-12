@@ -1,0 +1,21 @@
+
+<div class="components-page">
+  <select [(ngModel)]="selectedCategoryId" (change)="onCategoryChange()" name="category" class="category-selector">
+    <option value="">All Categories</option>
+    <option *ngFor="let category of categories" [value]="category.categoryId">{{ category.name }}</option>
+  </select>
+  <div class="part-list-container">
+    <div *ngFor="let part of filteredParts" class="part-item">
+      <div class="part-name">{{ part.name }}</div>
+      <div class="part-actions">
+        <button class="edit-btn" routerLink="/components/{{ part.componentId }}">Edit</button>
+        <button class="delete-btn" (click)="deletePart(part.componentId)">Delete</button>
+      </div>
+    </div>
+  </div>
+  <button type="button" routerLink="/components/0" class="add-btn">Add component</button>
+</div>
+
+
+
+

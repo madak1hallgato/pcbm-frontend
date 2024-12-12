@@ -1,0 +1,115 @@
+
+.profile-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.greeting {
+  font-size: 18px;
+  color: #333;
+}
+
+.builds-count {
+  font-size: 18px;
+  color: #333;
+}
+
+.builds-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  height: 325px;
+  overflow-y: auto;
+}
+
+.builds-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.build-item {
+  width: calc(25% - 8px);
+  background-color: #323232;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.build-item:hover {
+  background-color: #1c1c1c;
+}
+
+.plus-build-item {
+  width: calc(25% - 8px);
+  background-color:  #28a745;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.plus-build-item:hover {
+  background-color: #1b7a30;
+}
+
+.plus-build-item span {
+  font-size: 14px;
+  transform: scale(3);
+  transform-origin: center;
+  white-space: nowrap;
+}
+
+.build-item span {
+  font-size: 16px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
